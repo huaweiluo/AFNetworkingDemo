@@ -6,5 +6,6 @@ target 'AFNetworkingDemo' do
   use_frameworks!
 
   # Pods for AFNetworkingDemo
+  pod 'AFNetworking', '~> 4.0'
 
 end

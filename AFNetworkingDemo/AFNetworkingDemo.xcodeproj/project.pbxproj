@@ -15,6 +15,9 @@
 		835B595F29A3580600F6A4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835B595E29A3580600F6A4F3 /* Assets.xcassets */; };
 		835B596229A3580600F6A4F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835B596029A3580600F6A4F3 /* LaunchScreen.storyboard */; };
 		835B596529A3580600F6A4F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 835B596429A3580600F6A4F3 /* main.m */; };
+		83CB236C29A49ECD00053F8A /* AFDBaseSwizzleDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CB236B29A49ECD00053F8A /* AFDBaseSwizzleDemo.m */; };
+		83CB236F29A49EE300053F8A /* AFDSubSwizzleDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CB236E29A49EE300053F8A /* AFDSubSwizzleDemo.m */; };
+		83CB237229A4A49D00053F8A /* AFDSwizzlingDemo_.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CB237129A4A49D00053F8A /* AFDSwizzlingDemo_.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,12 @@
 		835B596129A3580600F6A4F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		835B596329A3580600F6A4F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		835B596429A3580600F6A4F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83CB236A29A49ECD00053F8A /* AFDBaseSwizzleDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFDBaseSwizzleDemo.h; sourceTree = "<group>"; };
+		83CB236B29A49ECD00053F8A /* AFDBaseSwizzleDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFDBaseSwizzleDemo.m; sourceTree = "<group>"; };
+		83CB236D29A49EE300053F8A /* AFDSubSwizzleDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFDSubSwizzleDemo.h; sourceTree = "<group>"; };
+		83CB236E29A49EE300053F8A /* AFDSubSwizzleDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFDSubSwizzleDemo.m; sourceTree = "<group>"; };
+		83CB237029A4A49D00053F8A /* AFDSwizzlingDemo_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFDSwizzlingDemo_.h; sourceTree = "<group>"; };
+		83CB237129A4A49D00053F8A /* AFDSwizzlingDemo_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFDSwizzlingDemo_.m; sourceTree = "<group>"; };
 		AA5C1CDC1D682259F582D64E /* Pods-AFNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkingDemo.release.xcconfig"; path = "Target Support Files/Pods-AFNetworkingDemo/Pods-AFNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EADA2D6938524FEFAE0B9242 /* Pods_AFNetworkingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNetworkingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -53,7 +62,6 @@
 				5AB29B47E3E80546D549A111 /* Pods-AFNetworkingDemo.debug.xcconfig */,
 				AA5C1CDC1D682259F582D64E /* Pods-AFNetworkingDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -78,6 +86,7 @@
 		835B595129A3580400F6A4F3 /* AFNetworkingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				83CB236929A49E8500053F8A /* Class */,
 				835B595229A3580400F6A4F3 /* AppDelegate.h */,
 				835B595329A3580400F6A4F3 /* AppDelegate.m */,
 				835B595529A3580400F6A4F3 /* SceneDelegate.h */,
@@ -91,6 +100,19 @@
 				835B596429A3580600F6A4F3 /* main.m */,
 			);
 			path = AFNetworkingDemo;
+			sourceTree = "<group>";
+		};
+		83CB236929A49E8500053F8A /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				83CB236A29A49ECD00053F8A /* AFDBaseSwizzleDemo.h */,
+				83CB236B29A49ECD00053F8A /* AFDBaseSwizzleDemo.m */,
+				83CB236D29A49EE300053F8A /* AFDSubSwizzleDemo.h */,
+				83CB236E29A49EE300053F8A /* AFDSubSwizzleDemo.m */,
+				83CB237029A4A49D00053F8A /* AFDSwizzlingDemo_.h */,
+				83CB237129A4A49D00053F8A /* AFDSwizzlingDemo_.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 		BC3981E90E8ACDD53A9C9B14 /* Frameworks */ = {
@@ -112,6 +134,7 @@
 				835B594B29A3580400F6A4F3 /* Sources */,
 				835B594C29A3580400F6A4F3 /* Frameworks */,
 				835B594D29A3580400F6A4F3 /* Resources */,
+				17E3675C4806E730C1745F34 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -168,6 +191,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		17E3675C4806E730C1745F34 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFNetworkingDemo/Pods-AFNetworkingDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AFNetworkingDemo/Pods-AFNetworkingDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AFNetworkingDemo/Pods-AFNetworkingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C49E2D8CC65557A9312A2CBA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,8 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83CB236C29A49ECD00053F8A /* AFDBaseSwizzleDemo.m in Sources */,
 				835B595A29A3580400F6A4F3 /* ViewController.m in Sources */,
+				83CB236F29A49EE300053F8A /* AFDSubSwizzleDemo.m in Sources */,
 				835B595429A3580400F6A4F3 /* AppDelegate.m in Sources */,
+				83CB237229A4A49D00053F8A /* AFDSwizzlingDemo_.m in Sources */,
 				835B596529A3580600F6A4F3 /* main.m in Sources */,
 				835B595729A3580400F6A4F3 /* SceneDelegate.m in Sources */,
 			);
