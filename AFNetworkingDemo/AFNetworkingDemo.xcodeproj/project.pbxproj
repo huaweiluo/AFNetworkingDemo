@@ -15,9 +15,11 @@
 		835B595F29A3580600F6A4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 835B595E29A3580600F6A4F3 /* Assets.xcassets */; };
 		835B596229A3580600F6A4F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835B596029A3580600F6A4F3 /* LaunchScreen.storyboard */; };
 		835B596529A3580600F6A4F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 835B596429A3580600F6A4F3 /* main.m */; };
+		83C1C1B729A75772004F9A20 /* aps.cer in Resources */ = {isa = PBXBuildFile; fileRef = 83C1C1B629A75772004F9A20 /* aps.cer */; };
 		83CB236C29A49ECD00053F8A /* AFDBaseSwizzleDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CB236B29A49ECD00053F8A /* AFDBaseSwizzleDemo.m */; };
 		83CB236F29A49EE300053F8A /* AFDSubSwizzleDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CB236E29A49EE300053F8A /* AFDSubSwizzleDemo.m */; };
 		83CB237229A4A49D00053F8A /* AFDSwizzlingDemo_.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CB237129A4A49D00053F8A /* AFDSwizzlingDemo_.m */; };
+		83E5DCF829ACDDB5000987A6 /* GlobalSign.cer in Resources */ = {isa = PBXBuildFile; fileRef = 83E5DCF629ACDDB5000987A6 /* GlobalSign.cer */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,12 +36,14 @@
 		835B596129A3580600F6A4F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		835B596329A3580600F6A4F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		835B596429A3580600F6A4F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		83C1C1B629A75772004F9A20 /* aps.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps.cer; sourceTree = "<group>"; };
 		83CB236A29A49ECD00053F8A /* AFDBaseSwizzleDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFDBaseSwizzleDemo.h; sourceTree = "<group>"; };
 		83CB236B29A49ECD00053F8A /* AFDBaseSwizzleDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFDBaseSwizzleDemo.m; sourceTree = "<group>"; };
 		83CB236D29A49EE300053F8A /* AFDSubSwizzleDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFDSubSwizzleDemo.h; sourceTree = "<group>"; };
 		83CB236E29A49EE300053F8A /* AFDSubSwizzleDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFDSubSwizzleDemo.m; sourceTree = "<group>"; };
 		83CB237029A4A49D00053F8A /* AFDSwizzlingDemo_.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFDSwizzlingDemo_.h; sourceTree = "<group>"; };
 		83CB237129A4A49D00053F8A /* AFDSwizzlingDemo_.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFDSwizzlingDemo_.m; sourceTree = "<group>"; };
+		83E5DCF629ACDDB5000987A6 /* GlobalSign.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = GlobalSign.cer; sourceTree = "<group>"; };
 		AA5C1CDC1D682259F582D64E /* Pods-AFNetworkingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AFNetworkingDemo.release.xcconfig"; path = "Target Support Files/Pods-AFNetworkingDemo/Pods-AFNetworkingDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EADA2D6938524FEFAE0B9242 /* Pods_AFNetworkingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AFNetworkingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,6 +90,7 @@
 		835B595129A3580400F6A4F3 /* AFNetworkingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				83C1C1B529A75772004F9A20 /* Sources */,
 				83CB236929A49E8500053F8A /* Class */,
 				835B595229A3580400F6A4F3 /* AppDelegate.h */,
 				835B595329A3580400F6A4F3 /* AppDelegate.m */,
@@ -100,6 +105,15 @@
 				835B596429A3580600F6A4F3 /* main.m */,
 			);
 			path = AFNetworkingDemo;
+			sourceTree = "<group>";
+		};
+		83C1C1B529A75772004F9A20 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				83E5DCF629ACDDB5000987A6 /* GlobalSign.cer */,
+				83C1C1B629A75772004F9A20 /* aps.cer */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		83CB236929A49E8500053F8A /* Class */ = {
@@ -185,6 +199,8 @@
 				835B596229A3580600F6A4F3 /* LaunchScreen.storyboard in Resources */,
 				835B595F29A3580600F6A4F3 /* Assets.xcassets in Resources */,
 				835B595D29A3580400F6A4F3 /* Main.storyboard in Resources */,
+				83E5DCF829ACDDB5000987A6 /* GlobalSign.cer in Resources */,
+				83C1C1B729A75772004F9A20 /* aps.cer in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import <AFNetworking/AFURLSessionManager.h>
 #import <AFNetworking/AFHTTPSessionManager.h>
+#import <AFNetworking/AFSecurityPolicy.h>
 #import "AFDSubSwizzleDemo.h"
 
 @interface ViewController ()
@@ -167,12 +168,20 @@
 #pragma mark -
 #pragma mark AFNetworking GET 请求
 - (void)AFNetworkingRequest {
-    AFHTTPSessionManager *sessionManager = [AFHTTPSessionManager manager];
-    NSMutableDictionary *dicBody = [[NSMutableDictionary alloc] init];
-    [dicBody setValue:@"value1" forKey:@"key1"];
-    [dicBody setValue:@"value2" forKey:@"key2"];
+    AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
     
+    AFHTTPSessionManager *sessionManager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:@"https://www.baidu.com"]];
+    NSMutableDictionary *dicBody = [[NSMutableDictionary alloc] init];
+//    [dicBody setValue:@"value1" forKey:@"key1"];
+//    [dicBody setValue:@"value2" forKey:@"key2"];
+    
+    //** 设置安全策略 */
+    [sessionManager setSecurityPolicy:securityPolicy];
+    
+    //* 默认使用的AFJSONResponseSerializer, 这里修改为AFHTTPResponseSerializer 序列化对象 */
     sessionManager.responseSerializer = [AFHTTPResponseSerializer serializer];
+    
+    //** 增加text/html数据格式支持 */
     NSMutableSet *newSet = [[NSMutableSet alloc] initWithSet:sessionManager.responseSerializer.acceptableContentTypes];
     [newSet addObject:@"text/html"];
     sessionManager.responseSerializer.acceptableContentTypes = [newSet copy];
